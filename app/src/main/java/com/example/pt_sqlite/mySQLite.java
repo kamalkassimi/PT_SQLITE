@@ -61,7 +61,7 @@ public class mySQLite extends SQLiteOpenHelper {
             return  true;
 
     }
-    public  int get_count()
+    public  int get_count(){
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.rawQuery("SELECT * FROM vetements",null);
         return cursor.getCount();
